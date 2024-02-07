@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-  background: rgb(23, 5, 177);
+  background: rgb(0, 0, 0);
   margin: 0 auto;
   margin-bottom: 20px;
   display: flex;
@@ -33,7 +33,7 @@ h1 {
 }
 a {
   text-decoration: none;
-  color: #054169;
+  color: #178fdf;
 }
 
 /* main container area beneath menu */
