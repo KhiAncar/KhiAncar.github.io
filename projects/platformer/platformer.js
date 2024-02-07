@@ -27,15 +27,16 @@ $(function () {
     createPlatform(1000, 500, 200, 20);
     createPlatform(600, 600, 200, 20);
     createPlatform(800, 700, 200, 20);
-    reateCollectable("steve", 500, 300, 20, 0.5); // creates a "steve" collectible at the coordinates (500, 300), falling with a high gravity of 20, and bouncing with 50% bounce
-createCollectable("grace", 500, 300); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
-"database" 
-"max" 
-"steve" 
-"grace" 
-"kennedi" 
-createCannon("left", 600, 1000); // cannon on left wall, 600px down, shooting once per second
-
+    createPlatform(410, 700, 200, 20);
+    createPlatform(850, 360, 200, 20);
+    createPlatform(1290, 290, 200, 100);
+    createCollectable("steve", 500, 300, 20, 0.5);
+    createCollectable("grace", 500, 200);
+    createCollectable("max",1000, 400);
+    createCollectable("kennedi",1290, 100);
+    createCannon("left", 600, 1000);
+    createCannon("right", 400, 1000);
+    createCannon("left", 490, 1000)
 /**
      * Uncomment the loops below to add a "grid" to your platformer game's screen
      * The grid will place both horizontal and vertical platforms incremented 100 pixels apart
