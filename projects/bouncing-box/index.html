@@ -74,13 +74,13 @@
              if(positionX > boardWidth) {
                speed = - speed;
              }
-             if(positonX < 0) {
+             if(positionX < 0) {
               speed = speed * -1 ;
              }
-             if(positonX < 0)
+            }
 
 
-           }
+           
 
            /*
       This Function will be called 20 times/second. Each time it is called,
@@ -96,7 +96,13 @@
              positionX = 0;
              points = points + 1;
            changeBoxText(points);
-           speed = speed + 3
+          
+           if ( speed > 0) {
+            speed = speed + 3
+           }
+           else if (speed < 0){
+            speed = speed - 3
+           }
            }
          })();
     </script>
